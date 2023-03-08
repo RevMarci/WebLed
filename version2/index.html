@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--<script src="script.ts"></script>-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>16x16 LED Panel</h1>
+        <table>
+            <tbody>
+                <script src="script.ts"></script>
+            </tbody>
+        </table>
+        <div>
+            <p>It may happen that the color of the LED will be different in reality!</p>
+        </div>
+        <div class="row">
+            <div class="col-2 basecoll">
+                <button id="ChoosenColor"></button>
+            </div>
+            <div class="col-2 basecoll">
+                <button id="Eraser" onclick="changePaintColorByButton('')"><!--<img src="erase.png" alt="">--></button>
+                <button id="FullClear" onclick="clearTable()"></button>
+            </div>
+            <div class="col-8 basecoll">
+                <div>
+                    <button class="ColorButton" id="ColorButtonRed" onclick="changePaintColorByButton('#ff0000', '0')"></button>
+                    <button class="ColorButton" id="ColorButtonOrange" onclick="changePaintColorByButton('#ffa500', '1')"></button>
+                    <button class="ColorButton" id="ColorButtonYellow" onclick="changePaintColorByButton('#ffff00', '2')"></button>
+                    <button class="ColorButton" id="ColorButtonGreen" onclick="changePaintColorByButton('#008000', '3')"></button>
+                </div>
+                <div>
+                    <button class="ColorButton" id="ColorButtonBlue" onclick="changePaintColorByButton('#0000ff', '4')"></button>
+                    <button class="ColorButton" id="ColorButtonIndigo" onclick="changePaintColorByButton('#4b0082', '5')"></button>
+                    <button class="ColorButton" id="ColorButtonViolet" onclick="changePaintColorByButton('#ee82ee', '6')"></button>
+                    <button class="ColorButton" id="ColorButtonWhite" onclick="changePaintColorByButton('#ffffff', '7')"></button>
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="255" value="255" class="ColorSlider" id='ColorSliderRed'>
+                    <input type="range" min="0" max="255" value="255" class="ColorSlider" id='ColorSliderGreen'>
+                    <input type="range" min="0" max="255" value="0" class="ColorSlider" id='ColorSliderBlue'>
+                </div>
+            </div>
+        </div>
+        <a href="clockpage.html">Clock</a>
+    </div>
+</body>
+</html>
